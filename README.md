@@ -24,9 +24,9 @@ The following **optional** features are implemented:
 ## Video Walkthrough
 Here's a walkthrough of implemented user stories:
 
-1                          |2       |
-:-------------------------:|:......:|
-![](https://i.imgur.com/XnBzCAb.gif)|![ezgif com-gif-to-mp4](https://user-images.githubusercontent.com/70599040/222628202-e7f70440-d92b-403b-8e0f-b1563a9f80b3.gif)|
+![ezgif com-gif-to-mp4](https://user-images.githubusercontent.com/70599040/222628202-e7f70440-d92b-403b-8e0f-b1563a9f80b3.gif)|
+:-------------------------:|
+![](https://i.imgur.com/XnBzCAb.gif)|
 
 ![ezgif com-gif-to-mp4](https://user-images.githubusercontent.com/70599040/222628202-e7f70440-d92b-403b-8e0f-b1563a9f80b3.gif)
 
