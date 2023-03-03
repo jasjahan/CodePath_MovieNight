@@ -27,6 +27,8 @@ Here's a walkthrough of implemented user stories:
 ![ezgif com-gif-to-mp4](https://user-images.githubusercontent.com/70599040/222628202-e7f70440-d92b-403b-8e0f-b1563a9f80b3.gif)|
 :-------------------------:|
 ![](https://i.imgur.com/XnBzCAb.gif)|
+:-------------------------:|
+![ezgif com-gif-to-mp4 (1)](https://user-images.githubusercontent.com/70599040/222628319-95bb645e-4538-40d7-950a-fc19ad128320.gif)|
 
 ![ezgif com-gif-to-mp4](https://user-images.githubusercontent.com/70599040/222628202-e7f70440-d92b-403b-8e0f-b1563a9f80b3.gif)
 
