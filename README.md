@@ -28,7 +28,7 @@ Here's a walkthrough of implemented user stories:
 :-------------------------:|
 ![](https://i.imgur.com/XnBzCAb.gif)|
 
-https://i.imgur.com/NGHMaal.gif
+![ezgif com-gif-to-mp4](https://user-images.githubusercontent.com/70599040/222628202-e7f70440-d92b-403b-8e0f-b1563a9f80b3.gif)
 
 
 
