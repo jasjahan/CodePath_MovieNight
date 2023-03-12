@@ -17,6 +17,10 @@
 		DC89767029B0806200C209A7 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC89766F29B0806200C209A7 /* MovieCell.swift */; };
 		DC89767329B0870200C209A7 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = DC89767229B0870200C209A7 /* Nuke */; };
 		DC89767529B0880F00C209A7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC89767429B0880F00C209A7 /* DetailViewController.swift */; };
+		DCE00C4E29BD08FB00A636F1 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE00C4D29BD08FB00A636F1 /* AlbumsViewController.swift */; };
+		DCE00C5029BD0DA100A636F1 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE00C4F29BD0DA100A636F1 /* AlbumCell.swift */; };
+		DCE00C5229BD3F6F00A636F1 /* SimilarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE00C5129BD3F6F00A636F1 /* SimilarViewController.swift */; };
+		DCE00C5429BD40DF00A636F1 /* SimilarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE00C5329BD40DF00A636F1 /* SimilarCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		DC89766D29B0739600C209A7 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		DC89766F29B0806200C209A7 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		DC89767429B0880F00C209A7 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DCE00C4D29BD08FB00A636F1 /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
+		DCE00C4F29BD0DA100A636F1 /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		DCE00C5129BD3F6F00A636F1 /* SimilarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarViewController.swift; sourceTree = "<group>"; };
+		DCE00C5329BD40DF00A636F1 /* SimilarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,15 +73,19 @@
 			isa = PBXGroup;
 			children = (
 				DC89766C29B0733E00C209A7 /* Model */,
-				DC89765829B0733300C209A7 /* AppDelegate.swift */,
-				DC89765A29B0733300C209A7 /* SceneDelegate.swift */,
 				DC89765C29B0733300C209A7 /* MovieViewController.swift */,
 				DC89766F29B0806200C209A7 /* MovieCell.swift */,
-				DC89765E29B0733300C209A7 /* Main.storyboard */,
-				DC89766129B0733400C209A7 /* Assets.xcassets */,
-				DC89766329B0733400C209A7 /* LaunchScreen.storyboard */,
-				DC89766629B0733400C209A7 /* Info.plist */,
 				DC89767429B0880F00C209A7 /* DetailViewController.swift */,
+				DC89766329B0733400C209A7 /* LaunchScreen.storyboard */,
+				DC89765E29B0733300C209A7 /* Main.storyboard */,
+				DC89765829B0733300C209A7 /* AppDelegate.swift */,
+				DC89765A29B0733300C209A7 /* SceneDelegate.swift */,
+				DC89766129B0733400C209A7 /* Assets.xcassets */,
+				DC89766629B0733400C209A7 /* Info.plist */,
+				DCE00C4D29BD08FB00A636F1 /* AlbumsViewController.swift */,
+				DCE00C4F29BD0DA100A636F1 /* AlbumCell.swift */,
+				DCE00C5129BD3F6F00A636F1 /* SimilarViewController.swift */,
+				DCE00C5329BD40DF00A636F1 /* SimilarCell.swift */,
 			);
 			path = Flixster;
 			sourceTree = "<group>";
@@ -163,12 +175,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCE00C4E29BD08FB00A636F1 /* AlbumsViewController.swift in Sources */,
+				DCE00C5229BD3F6F00A636F1 /* SimilarViewController.swift in Sources */,
 				DC89765D29B0733300C209A7 /* MovieViewController.swift in Sources */,
 				DC89765929B0733300C209A7 /* AppDelegate.swift in Sources */,
+				DCE00C5029BD0DA100A636F1 /* AlbumCell.swift in Sources */,
 				DC89766E29B0739600C209A7 /* Movie.swift in Sources */,
 				DC89767529B0880F00C209A7 /* DetailViewController.swift in Sources */,
 				DC89767029B0806200C209A7 /* MovieCell.swift in Sources */,
 				DC89765B29B0733300C209A7 /* SceneDelegate.swift in Sources */,
+				DCE00C5429BD40DF00A636F1 /* SimilarCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

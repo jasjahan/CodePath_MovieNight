@@ -1,20 +1,18 @@
 //
-//  MovieCell.swift
+//  SimilarCell.swift
 //  Flixster
 //
-//  Created by Jasmine Jahan on 3/1/23.
+//  Created by Jasmine Jahan on 3/11/23.
 //
 
 import UIKit
 import Nuke
 
-class MovieCell: UITableViewCell {
+class SimilarCell: UITableViewCell {
 
-    @IBOutlet weak var movieImage: UIImageView!
-    @IBOutlet weak var movieName: UILabel!
-    @IBOutlet weak var movieDetail: UILabel!
-    
-    
+    @IBOutlet weak var sameImage: UIImageView!
+    @IBOutlet weak var sameDetail: UILabel!
+    @IBOutlet weak var sameName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -25,12 +23,12 @@ class MovieCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-        
+    
     func configure(with movie: Movie) {
         let b = URL(string: "https://image.tmdb.org/t/p/w500\(movie.poster_path)")
-        movieName.text = movie.original_title
-        movieDetail.text = movie.overview
-        Nuke.loadImage(with: b!, into: movieImage)
+        sameName.text = movie.original_title
+        sameDetail.text = movie.overview
+        Nuke.loadImage(with: b!, into: sameImage)
     }
 
 }

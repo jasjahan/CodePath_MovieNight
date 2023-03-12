@@ -8,21 +8,66 @@
 import UIKit
 
 class MovieViewController: UIViewController, UITableViewDataSource{
+    var movies: [Movie] = []
     
     
     @IBOutlet weak var tableView: UITableView!
     
-    var movies: [Movie] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.dataSource = self
+
         // Do any additional setup after loading the view.
-        movies = Movie.mockMovie
+        let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=b11a0ebf7a3f43540a27a57ab8822501")!
+
+        // Use the URL to instantiate a request
+        let request = URLRequest(url: url)
+
+        let task = URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
+
+            // Handle any errors
+            if let error = error {
+                print("❌ Network error: \(error.localizedDescription)")
+            }
+
+            // Make sure we have data
+            guard let data = data else {
+                print("❌ Data is nil")
+                return
+            }
+
+            do {
+                // Create a JSON Decoder
+                let decoder = JSONDecoder()
+
+                
+                // Use the JSON decoder to try and map the data to our custom model.
+                let response = try decoder.decode(MovieArray.self, from: data)
+
+                // Access the array of tracks from the `results` property
+                let movies = response.results
+                
+                DispatchQueue.main.async {
+
+                    // Set the view controller's tracks property as this is the one the table view references
+                    self?.movies = movies
+                    // Make the table view reload now that we have new data
+                    self?.tableView.reloadData()
+                }
+                print("✅ \(movies)")
+            } catch {
+                print("❌ Error parsing JSON: \(error.localizedDescription)")
+            }
+        }
+
+        // Initiate the network request
+        task.resume()
         print(movies)
+        tableView.dataSource = self
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+  
+  override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         if let indexPath = tableView.indexPathForSelectedRow {
 
@@ -31,8 +76,9 @@ class MovieViewController: UIViewController, UITableViewDataSource{
         }
        
     }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // TODO: Pt 1 - Pass the selected track to the detail view controller
         if let cell = sender as? UITableViewCell,
            // Get the index path of the cell from the table view
            let indexPath = tableView.indexPath(for: cell),
@@ -47,9 +93,11 @@ class MovieViewController: UIViewController, UITableViewDataSource{
         }
     }
     
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies.count
     }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as! MovieCell
