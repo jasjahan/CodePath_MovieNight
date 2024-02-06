@@ -2,6 +2,7 @@
 **MovieNight** is a movie browsing app that is a movie browsing app similar to Flixster that introduces networking request and add the ability to fetch real data from a third party server TMDB.
 
 Submitted by: **Jasmine Jahan**
+Time spent: **10** hours spent in total
 
 ### MovieNight-Part 01
 ### Required Features
