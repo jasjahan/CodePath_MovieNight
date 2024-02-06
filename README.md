@@ -1,4 +1,4 @@
-# Project 3 - *MovieNight-Part02*
+# MovieNight-Part 02
 
 Submitted by: **Jasmine Jahan**
 
@@ -14,10 +14,6 @@ The following **required** functionality is completed:
 - [X] App has a collection view with the same list of movies
 - [X] Uses a tab bar controller to switch between collection view and table view screens
  
-The following **optional** features are implemented:
-
-- [ ] Make an additional network call to another end-point.    
-- [ ] Allow users to scroll when context items are off-screen (table view implemention)
 
 
 
@@ -25,7 +21,7 @@ The following **optional** features are implemented:
 ![](https://i.imgur.com/b809UU0.gif)
 
 
-## Project 2 - *MovieNight-Part01*
+## MovieNight-Part 01
 
 Submitted by: **Jasmine Jahan**
 
@@ -45,26 +41,16 @@ The following **required** functionality is completed:
 The following **optional** features are implemented:
 
 - [X] Unique UI changes, such as background, font/color changes, etc.
-- [ ] User implements a collection view
-- [ ] User implemenets tab bar controller with at least two screens
+
 
 ## Video Walkthrough
 Here's a walkthrough of implemented user stories:
 
-<<<<<<< HEAD
 1                          |2                          |
 :-------------------------:|:-------------------------:|
 ![](https://i.imgur.com/NGHMaal.gif)| ![](https://i.imgur.com/6jTlKa1.gif)|
 
-=======
-![](https://i.imgur.com/XnBzCAb.gif)|  
-:-------------------------:|
-![ezgif com-gif-to-mp4 (1)](https://user-images.githubusercontent.com/70599040/222628319-95bb645e-4538-40d7-950a-fc19ad128320.gif)|
->>>>>>> 6ac165b3057854070532faa75c2e9b6904b53864
 
 
 ## Notes(Learned)
 * How to use table views and custom table view cells to display a list of arbitrary data to the user
-
-
-
