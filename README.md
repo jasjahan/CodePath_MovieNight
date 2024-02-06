@@ -45,10 +45,8 @@ The following **optional** features are implemented:
 
 ## Video Walkthrough
 Here's a walkthrough of implemented user stories:
-
-1                          |2                          |
-:-------------------------:|:-------------------------:|
-![](https://i.imgur.com/NGHMaal.gif)| ![](https://i.imgur.com/6jTlKa1.gif)|
+![](https://i.imgur.com/NGHMaal.gif) 
+![](https://i.imgur.com/6jTlKa1.gif)
 
 
 
